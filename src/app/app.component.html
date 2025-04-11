@@ -1,0 +1,13 @@
+
+<H1>Hello Angular</H1>
+
+<router-outlet />
+
+
+<ul>
+  <li *ngFor="let item of items">
+    {{ item.title }}
+  </li>
+</ul>
+
+<button (click)="fetchTodos()">Fetch todos</button>
