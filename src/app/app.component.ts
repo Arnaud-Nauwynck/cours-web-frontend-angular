@@ -33,8 +33,14 @@ export class AppComponent {
       next: data => {
         console.log(data);
         this.items = data;
+      },
+      error: err => {
+        console.error(err);
       }
     });
   }
 
+  removeTodo(item: Todo) {
+    console.log("click remove", item)
+  }
 }
